@@ -19,6 +19,7 @@ function App() {
                     token: credentialResponse.credential,
                   }
                 );
+                localStorage.setItem("UserData", JSON.stringify(data));
               } catch (error) {
                 console.log("error :", error);
               }
